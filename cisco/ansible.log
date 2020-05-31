@@ -1,0 +1,209 @@
+2020-05-31 16:15:53,348 p=50000 u=igor n=ansible | ansible_ssh_user=root | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname ansible_ssh_user=root: Name or service not known",
+    "unreachable": true
+}
+2020-05-31 16:15:53,360 p=50000 u=igor n=ansible | ansible_ssh_pass=1178710 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname ansible_ssh_pass=1178710: Name or service not known",
+    "unreachable": true
+}
+2020-05-31 16:15:53,389 p=50000 u=igor n=ansible | 192.168.209.234 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: igor@192.168.209.234: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2020-05-31 16:21:53,927 p=50332 u=igor n=paramiko.transport | starting thread (client mode): 0x33c74c10
+2020-05-31 16:21:53,928 p=50332 u=igor n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.7.1
+2020-05-31 16:21:53,939 p=50329 u=igor n=ansible | ansible_ssh_user=root | UNREACHABLE! => {
+    "changed": false,
+    "msg": "[Errno -2] Name or service not known",
+    "unreachable": true
+}
+2020-05-31 16:21:53,940 p=50332 u=igor n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4
+2020-05-31 16:21:53,940 p=50332 u=igor n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.2p1)
+2020-05-31 16:21:53,942 p=50332 u=igor n=paramiko.transport | kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group16-sha512', 'diffie-hellman-group18-sha512', 'diffie-hellman-group14-sha256'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] server encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] client mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2020-05-31 16:21:53,942 p=50332 u=igor n=paramiko.transport | Kex agreed: curve25519-sha256@libssh.org
+2020-05-31 16:21:53,942 p=50332 u=igor n=paramiko.transport | HostKey agreed: ssh-ed25519
+2020-05-31 16:21:53,943 p=50332 u=igor n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-05-31 16:21:53,943 p=50332 u=igor n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-05-31 16:21:53,943 p=50332 u=igor n=paramiko.transport | Compression agreed: none
+2020-05-31 16:21:53,948 p=50329 u=igor n=ansible | ansible_ssh_pass=1178710 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "[Errno -2] Name or service not known",
+    "unreachable": true
+}
+2020-05-31 16:21:53,958 p=50332 u=igor n=paramiko.transport | kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2020-05-31 16:21:53,959 p=50332 u=igor n=paramiko.transport | Switch to new keys ...
+2020-05-31 16:21:53,960 p=50332 u=igor n=paramiko.transport | Trying SSH agent key b'2d9233ee14541c460c5a9eb171bfb639'
+2020-05-31 16:21:53,961 p=50332 u=igor n=paramiko.transport | userauth is OK
+2020-05-31 16:21:53,982 p=50332 u=igor n=paramiko.transport | Authentication (publickey) failed.
+2020-05-31 16:21:53,988 p=50332 u=igor n=paramiko.transport | Trying discovered key b'2d9233ee14541c460c5a9eb171bfb639' in /home/igor/.ssh/id_rsa
+2020-05-31 16:21:53,988 p=50332 u=igor n=paramiko.transport | userauth is OK
+2020-05-31 16:21:54,044 p=50332 u=igor n=paramiko.transport | Authentication (publickey) failed.
+2020-05-31 16:21:54,047 p=50329 u=igor n=ansible | 192.168.209.234 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to authenticate: Authentication failed.",
+    "unreachable": true
+}
+2020-05-31 16:23:54,487 p=50462 u=igor n=ansible | PLAY [Run show clock commands] *************************************************
+2020-05-31 16:23:54,509 p=50462 u=igor n=ansible | TASK [RUN 'SHOW VERSION'] ******************************************************
+2020-05-31 16:23:55,393 p=50467 u=igor n=ansible | network_os is set to ios
+2020-05-31 16:23:55,405 p=50468 u=igor n=ansible | network_os is set to ios
+2020-05-31 16:23:55,465 p=50466 u=igor n=ansible | network_os is set to ios
+2020-05-31 16:23:56,018 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | starting thread (client mode): 0x15ea5640
+2020-05-31 16:23:56,018 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Local version/idstring: SSH-2.0-paramiko_2.7.1
+2020-05-31 16:23:56,038 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4
+2020-05-31 16:23:56,038 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Connected (version 2.0, client OpenSSH_8.2p1)
+2020-05-31 16:23:56,039 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group16-sha512', 'diffie-hellman-group18-sha512', 'diffie-hellman-group14-sha256'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] server encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] client mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2020-05-31 16:23:56,040 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Kex agreed: curve25519-sha256@libssh.org
+2020-05-31 16:23:56,040 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | HostKey agreed: ssh-ed25519
+2020-05-31 16:23:56,040 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Cipher agreed: aes128-ctr
+2020-05-31 16:23:56,040 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | MAC agreed: hmac-sha2-256
+2020-05-31 16:23:56,040 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Compression agreed: none
+2020-05-31 16:23:56,052 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2020-05-31 16:23:56,053 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Switch to new keys ...
+2020-05-31 16:23:56,054 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | userauth is OK
+2020-05-31 16:23:58,425 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Authentication (password) failed.
+2020-05-31 16:24:00,428 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | starting thread (client mode): 0x15ed57c0
+2020-05-31 16:24:00,429 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Local version/idstring: SSH-2.0-paramiko_2.7.1
+2020-05-31 16:24:00,446 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4
+2020-05-31 16:24:00,446 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Connected (version 2.0, client OpenSSH_8.2p1)
+2020-05-31 16:24:00,448 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group16-sha512', 'diffie-hellman-group18-sha512', 'diffie-hellman-group14-sha256'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] server encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] client mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2020-05-31 16:24:00,448 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Kex agreed: curve25519-sha256@libssh.org
+2020-05-31 16:24:00,448 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | HostKey agreed: ssh-ed25519
+2020-05-31 16:24:00,448 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Cipher agreed: aes128-ctr
+2020-05-31 16:24:00,449 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | MAC agreed: hmac-sha2-256
+2020-05-31 16:24:00,449 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Compression agreed: none
+2020-05-31 16:24:00,464 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2020-05-31 16:24:00,464 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Switch to new keys ...
+2020-05-31 16:24:00,465 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | userauth is OK
+2020-05-31 16:24:02,836 p=50485 u=igor n=p=50485 u=igor | paramiko [192.168.209.234] | Authentication (password) failed.
+2020-05-31 16:24:06,006 p=50481 u=igor n=ansible | command timeout triggered, timeout value is 10 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2020-05-31 16:24:06,007 p=50485 u=igor n=ansible | command timeout triggered, timeout value is 10 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2020-05-31 16:24:06,010 p=50482 u=igor n=ansible | command timeout triggered, timeout value is 10 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2020-05-31 16:24:06,047 p=50462 u=igor n=ansible | [DEPRECATION WARNING]: Param 'username' is deprecated. See the module docs for 
+more information. This feature will be removed in version 2.9. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-05-31 16:24:06,048 p=50462 u=igor n=ansible | [DEPRECATION WARNING]: Param 'host' is deprecated. See the module docs for more
+ information. This feature will be removed in version 2.9. Deprecation warnings
+ can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-05-31 16:24:06,048 p=50462 u=igor n=ansible | [DEPRECATION WARNING]: Param 'password' is deprecated. See the module docs for 
+more information. This feature will be removed in version 2.9. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-05-31 16:24:06,049 p=50462 u=igor n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 20.04 on host 
+ansible_ssh_pass=1178710 should use /usr/bin/python3, but is using 
+/usr/bin/python for backward compatibility with prior Ansible releases. A 
+future Ansible release will default to using the discovered platform python for
+ this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/inter
+preter_discovery.html for more information. This feature will be removed in 
+version 2.12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-05-31 16:24:06,049 p=50462 u=igor n=ansible | fatal: [ansible_ssh_pass=1178710]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "changed": false, "msg": "command timeout triggered, timeout value is 10 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2020-05-31 16:24:06,050 p=50462 u=igor n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 20.04 on host ansible_ssh_user=root 
+should use /usr/bin/python3, but is using /usr/bin/python for backward 
+compatibility with prior Ansible releases. A future Ansible release will 
+default to using the discovered platform python for this host. See https://docs
+.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for 
+more information. This feature will be removed in version 2.12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-05-31 16:24:06,050 p=50462 u=igor n=ansible | fatal: [ansible_ssh_user=root]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "changed": false, "msg": "command timeout triggered, timeout value is 10 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2020-05-31 16:24:06,051 p=50462 u=igor n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 20.04 on host 192.168.209.234 should
+ use /usr/bin/python3, but is using /usr/bin/python for backward compatibility 
+with prior Ansible releases. A future Ansible release will default to using the
+ discovered platform python for this host. See https://docs.ansible.com/ansible
+/2.9/reference_appendices/interpreter_discovery.html for more information. This
+ feature will be removed in version 2.12. Deprecation warnings can be disabled 
+by setting deprecation_warnings=False in ansible.cfg.
+2020-05-31 16:24:06,051 p=50462 u=igor n=ansible | fatal: [192.168.209.234]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "changed": false, "msg": "command timeout triggered, timeout value is 10 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2020-05-31 16:24:06,054 p=50462 u=igor n=ansible | PLAY RECAP *********************************************************************
+2020-05-31 16:24:06,054 p=50462 u=igor n=ansible | 192.168.209.234            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-05-31 16:24:06,054 p=50462 u=igor n=ansible | ansible_ssh_pass=1178710   : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-05-31 16:24:06,054 p=50462 u=igor n=ansible | ansible_ssh_user=root      : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-05-31 16:24:06,153 p=50482 u=igor n=ansible | shutdown complete
+2020-05-31 16:24:06,154 p=50481 u=igor n=ansible | shutdown complete
+2020-05-31 16:24:06,156 p=50485 u=igor n=ansible | shutdown complete
+2020-05-31 16:26:16,498 p=50680 u=igor n=ansible | PLAY [Run show clock commands] *************************************************
+2020-05-31 16:26:16,520 p=50680 u=igor n=ansible | TASK [RUN 'SHOW VERSION'] ******************************************************
+2020-05-31 16:26:17,321 p=50686 u=igor n=ansible | network_os is set to ios
+2020-05-31 16:26:27,790 p=50696 u=igor n=ansible | command timeout triggered, timeout value is 10 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2020-05-31 16:26:27,825 p=50680 u=igor n=ansible | [DEPRECATION WARNING]: Param 'username' is deprecated. See the module docs for 
+more information. This feature will be removed in version 2.9. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-05-31 16:26:27,826 p=50680 u=igor n=ansible | [DEPRECATION WARNING]: Param 'host' is deprecated. See the module docs for more
+ information. This feature will be removed in version 2.9. Deprecation warnings
+ can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-05-31 16:26:27,826 p=50680 u=igor n=ansible | [DEPRECATION WARNING]: Param 'password' is deprecated. See the module docs for 
+more information. This feature will be removed in version 2.9. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-05-31 16:26:27,826 p=50680 u=igor n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 20.04 on host 192.168.209.234 should
+ use /usr/bin/python3, but is using /usr/bin/python for backward compatibility 
+with prior Ansible releases. A future Ansible release will default to using the
+ discovered platform python for this host. See https://docs.ansible.com/ansible
+/2.9/reference_appendices/interpreter_discovery.html for more information. This
+ feature will be removed in version 2.12. Deprecation warnings can be disabled 
+by setting deprecation_warnings=False in ansible.cfg.
+2020-05-31 16:26:27,827 p=50680 u=igor n=ansible | fatal: [192.168.209.234]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "changed": false, "msg": "command timeout triggered, timeout value is 10 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2020-05-31 16:26:37,794 p=50696 u=igor n=ansible | command timeout triggered, timeout value is 10 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2020-05-31 16:26:37,823 p=50680 u=igor n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 20.04 on host ansible_ssh_user=root 
+should use /usr/bin/python3, but is using /usr/bin/python for backward 
+compatibility with prior Ansible releases. A future Ansible release will 
+default to using the discovered platform python for this host. See https://docs
+.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for 
+more information. This feature will be removed in version 2.12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-05-31 16:26:37,823 p=50680 u=igor n=ansible | fatal: [ansible_ssh_user=root]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "changed": false, "msg": "command timeout triggered, timeout value is 10 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2020-05-31 16:26:47,796 p=50696 u=igor n=ansible | command timeout triggered, timeout value is 10 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2020-05-31 16:26:47,825 p=50680 u=igor n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 20.04 on host 
+ansible_ssh_pass=1178710 should use /usr/bin/python3, but is using 
+/usr/bin/python for backward compatibility with prior Ansible releases. A 
+future Ansible release will default to using the discovered platform python for
+ this host. See https://docs.ansible.com/ansible/2.9/reference_appendices/inter
+preter_discovery.html for more information. This feature will be removed in 
+version 2.12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-05-31 16:26:47,825 p=50680 u=igor n=ansible | fatal: [ansible_ssh_pass=1178710]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "changed": false, "msg": "command timeout triggered, timeout value is 10 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+2020-05-31 16:26:47,927 p=50696 u=igor n=ansible | shutdown complete
+2020-05-31 16:26:47,928 p=50680 u=igor n=ansible | PLAY RECAP *********************************************************************
+2020-05-31 16:26:47,929 p=50680 u=igor n=ansible | 192.168.209.234            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-05-31 16:26:47,929 p=50680 u=igor n=ansible | ansible_ssh_pass=1178710   : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-05-31 16:26:47,929 p=50680 u=igor n=ansible | ansible_ssh_user=root      : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-05-31 16:27:03,367 p=50919 u=igor n=paramiko.transport | starting thread (client mode): 0x10d73c10
+2020-05-31 16:27:03,369 p=50919 u=igor n=paramiko.transport | Local version/idstring: SSH-2.0-paramiko_2.7.1
+2020-05-31 16:27:03,380 p=50916 u=igor n=ansible | ansible_ssh_user=root | UNREACHABLE! => {
+    "changed": false,
+    "msg": "[Errno -2] Name or service not known",
+    "unreachable": true
+}
+2020-05-31 16:27:03,382 p=50919 u=igor n=paramiko.transport | Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4
+2020-05-31 16:27:03,382 p=50919 u=igor n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.2p1)
+2020-05-31 16:27:03,384 p=50919 u=igor n=paramiko.transport | kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group16-sha512', 'diffie-hellman-group18-sha512', 'diffie-hellman-group14-sha256'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] server encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] client mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2020-05-31 16:27:03,384 p=50919 u=igor n=paramiko.transport | Kex agreed: curve25519-sha256@libssh.org
+2020-05-31 16:27:03,384 p=50919 u=igor n=paramiko.transport | HostKey agreed: ssh-ed25519
+2020-05-31 16:27:03,384 p=50919 u=igor n=paramiko.transport | Cipher agreed: aes128-ctr
+2020-05-31 16:27:03,384 p=50919 u=igor n=paramiko.transport | MAC agreed: hmac-sha2-256
+2020-05-31 16:27:03,384 p=50919 u=igor n=paramiko.transport | Compression agreed: none
+2020-05-31 16:27:03,388 p=50916 u=igor n=ansible | ansible_ssh_pass=1178710 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "[Errno -2] Name or service not known",
+    "unreachable": true
+}
+2020-05-31 16:27:03,402 p=50919 u=igor n=paramiko.transport | kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2020-05-31 16:27:03,403 p=50919 u=igor n=paramiko.transport | Switch to new keys ...
+2020-05-31 16:27:03,404 p=50919 u=igor n=paramiko.transport | Trying SSH agent key b'2d9233ee14541c460c5a9eb171bfb639'
+2020-05-31 16:27:03,405 p=50919 u=igor n=paramiko.transport | userauth is OK
+2020-05-31 16:27:03,426 p=50919 u=igor n=paramiko.transport | Authentication (publickey) failed.
+2020-05-31 16:27:03,432 p=50919 u=igor n=paramiko.transport | Trying discovered key b'2d9233ee14541c460c5a9eb171bfb639' in /home/igor/.ssh/id_rsa
+2020-05-31 16:27:03,432 p=50919 u=igor n=paramiko.transport | userauth is OK
+2020-05-31 16:27:03,479 p=50919 u=igor n=paramiko.transport | Authentication (publickey) failed.
+2020-05-31 16:27:03,482 p=50916 u=igor n=ansible | 192.168.209.234 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to authenticate: Authentication failed.",
+    "unreachable": true
+}

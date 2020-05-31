@@ -19,3 +19,10 @@
 }
 2020-05-30 18:36:07,437 p=4245 u=igor n=ansible | PLAY RECAP *********************************************************************
 2020-05-30 18:36:07,437 p=4245 u=igor n=ansible | centos                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-05-31 16:06:41,992 p=49097 u=igor n=ansible | centos | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
