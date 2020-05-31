@@ -1,0 +1,10 @@
+---
+
+- hosts: linux
+  become: yes
+  tasks:
+    - name: do a uname
+      shell: uname -a > /home/igor/uname.txt
+    - name: whoami
+      shell: whoami 
+

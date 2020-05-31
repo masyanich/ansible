@@ -1,0 +1,13 @@
+---
+- hosts: linux
+  become: yes
+  tasks:
+   - name: Install Nginx
+     yum: pkg=nginx state=latest
+     notify:
+         - NGINX start
+
+  handlers:
+    - name: NGINX start
+      service: name=nginx state=started enabled=yes
+    

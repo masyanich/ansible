@@ -1,0 +1,9 @@
+---
+- hosts: linux
+  tasks:
+  - name: Install packages
+    apt:
+      name:
+      - nmap
+      state: latest
+      

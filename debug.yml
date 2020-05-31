@@ -1,0 +1,12 @@
+---
+- hosts: linux
+  vars:
+   - var_thing: "192.168.209.111"
+
+  tasks:
+   - name: ping
+     command: ping -c4 {{ var_thing }} 
+     register: results
+
+   - name: show results
+     debug: msg={{ results.stdout_lines }}

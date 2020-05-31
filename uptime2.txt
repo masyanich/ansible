@@ -1,0 +1,4 @@
+centos | CHANGED | rc=0 >>
+ 12:53:42 up  1:54,  3 users,  load average: 0.01, 0.00, 0.00
+Shared connection to centos closed.
+

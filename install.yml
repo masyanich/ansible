@@ -1,0 +1,11 @@
+---
+- hosts: linux
+  become: yes
+  tasks:
+  - name: Install packages
+    yum:
+      name:
+      - nano
+      - nmap
+      state: present
+      

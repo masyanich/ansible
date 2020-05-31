@@ -1,0 +1,10 @@
+---
+- name: install_nano
+hosts: linux
+tasks:
+
+    - name: work with nano
+     yum:
+           name: nano
+           state: latest
+
